@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<string>
 #include<vector>
 #include<conio.h>
@@ -12,8 +12,8 @@ public:
 	Frazione(double numer, double denom) :_numeratore(numer), _denominatore(denom){}
 	
 	void ShowCifre() {
-		std::cout <<"×èñëèòåëü : "<< _numeratore << '\n';
-		std::cout << "Çíàìåíàòåëü : " << _denominatore << '\n';
+		std::cout <<"Ð§Ð¸ÑÐ»Ð¸Ñ‚ÐµÐ»ÑŒ : "<< _numeratore << '\n';
+		std::cout << "Ð—Ð½Ð°Ð¼ÐµÐ½Ð°Ñ‚ÐµÐ»ÑŒ : " << _denominatore << '\n';
 	}
 	void GetNumer(double numer) {
 		_numeratore = numer;
@@ -45,11 +45,11 @@ public:
 	}
 
 	void Mostrare() {
-		std::cout << "ÔÈÎ : " << _FIO << '\n';
-		std::cout << "Íîìåð òåëåôîíà : " << _numero_di_tel << '\n';
-		std::cout << "Äîìàøíèé íîìåð : " << _numero_di_casa << '\n';
-		std::cout << "Ðàáî÷èé íîìåð : " << _numero_di_lavoro << '\n';
-		std::cout << "Äîïîëíèòåëüíàÿ èíôîðìàöèÿ : \n" << _altre_info << '\n';
+		std::cout << "Ð¤Ð˜Ðž : " << _FIO << '\n';
+		std::cout << "ÐÐ¾Ð¼ÐµÑ€ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð° : " << _numero_di_tel << '\n';
+		std::cout << "Ð”Ð¾Ð¼Ð°ÑˆÐ½Ð¸Ð¹ Ð½Ð¾Ð¼ÐµÑ€ : " << _numero_di_casa << '\n';
+		std::cout << "Ð Ð°Ð±Ð¾Ñ‡Ð¸Ð¹ Ð½Ð¾Ð¼ÐµÑ€ : " << _numero_di_lavoro << '\n';
+		std::cout << "Ð”Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð°Ñ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ : \n" << _altre_info << '\n';
 	}
 	std::string Mos() {
 		return _FIO;
@@ -58,8 +58,8 @@ public:
 int main() {
 	setlocale(LC_ALL, "Russian");
 
-	// Çàäà÷à 1.
-	std::cout << "Çàäà÷à 1.\n";
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 1.
+	std::cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° 1.\n";
 	Frazione fra1(23,10);
 	Frazione fra2(7, 5);
 	Frazione fra3(86, 4);
@@ -71,8 +71,8 @@ int main() {
 	std::cout << fra3.SetNumer() << " + " << fra3.SetDenom() << " = " << fra3.SetNumer() + fra3.SetDenom() << '\n';
 	std::cout << '\n';
 	system("pause");
-	// Çàäà÷à 2.
-	std::cout << "Çàäà÷à 2.\n";
+	// Ð—Ð°Ð´Ð°Ñ‡Ð° 2.
+	std::cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° 2.\n";
 	std::vector<Utente*>ut{};
 	std::vector<Utente*>::const_iterator it;
 	Utente* utent1 = new Utente("Alex", 4346, 4545, 434, "niente");
@@ -88,29 +88,29 @@ int main() {
 	auto it2 = ut.cend();
 	while (a != 9) {
 		system("cls");
-		std::cout << "Òåëåôîííàÿ êíèãà \n\n";
-		std::cout << "1.Äîáàâèòü àáîíåíòà\n2.Óäàëèòü àáîíåíòà\n3.Ïîêàçàòü âñåõ\n4.Ïîèñê ïî ôàìèëèè.\n";
+		std::cout << "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½Ð½Ð°Ñ ÐºÐ½Ð¸Ð³Ð° \n\n";
+		std::cout << "1.Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð°Ð±Ð¾Ð½ÐµÐ½Ñ‚Ð°\n2.Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð°Ð±Ð¾Ð½ÐµÐ½Ñ‚Ð°\n3.ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð²ÑÐµÑ…\n4.ÐŸÐ¾Ð¸ÑÐº Ð¿Ð¾ Ñ„Ð°Ð¼Ð¸Ð»Ð¸Ð¸.\n";
 		std::cin >> a;
 		switch (a) {
 		case 1:system("cls");
-			std::cout << "Ââåäèòå ÔÈÎ àáîíåíòà : ";
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¤Ð˜Ðž Ð°Ð±Ð¾Ð½ÐµÐ½Ñ‚Ð° : ";
 			std::cin.ignore();
 			std::getline(std::cin, FIO);
-			std::cout << "\nÂâåäèòå íîìåð òåëåôîíà : ";
+			std::cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð° : ";
 			std::cin >> tel;
-			std::cout << "\nÂâåäèòå äîìàøíèé íîìåð : ";
+			std::cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð¾Ð¼Ð°ÑˆÐ½Ð¸Ð¹ Ð½Ð¾Ð¼ÐµÑ€ : ";
 			std::cin >> casa;
-			std::cout << "\nÂâåäèòå ðàáî÷èé íîìåð : ";
+			std::cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð±Ð¾Ñ‡Ð¸Ð¹ Ð½Ð¾Ð¼ÐµÑ€ : ";
 			std::cin >> lavoro;
-			std::cout << "Ââåäèòå äîïîëíèòåëüíóþ èíôîðìàöèþ : ";
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½ÑƒÑŽ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÑŽ : ";
 			std::cin.ignore();
 			std::getline(std::cin, info); break;
 			ut.insert(it2,utent);
-		case 2:system("cls"); std::cout << "Ââåäèòå èíäåêñ àáîíåíòà : "; std::cin >> b; ut.erase(ut.begin() + b); break;
+		case 2:system("cls"); std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð½Ð´ÐµÐºÑ Ð°Ð±Ð¾Ð½ÐµÐ½Ñ‚Ð° : "; std::cin >> b; ut.erase(ut.begin() + b); break;
 		case 3:system("cls"); for (it = ut.begin(); it != ut.end(); it++)
 			(*it)->Mostrare(); system("pause");
 			; break;
-		case 4:std::cout << "Ââåäèòå íà÷àëî ôàìèëèè : "; std::cin.ignore(); std::getline(std::cin, str);
+		case 4:std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ñ‡Ð°Ð»Ð¾ Ñ„Ð°Ð¼Ð¸Ð»Ð¸Ð¸ : "; std::cin.ignore(); std::getline(std::cin, str);
 			for (it = ut.begin(); it != ut.end(); it++) {
 				stro=(*it)->Mos();
 				if (!stro.find(str))
